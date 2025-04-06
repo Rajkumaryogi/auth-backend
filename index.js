@@ -10,6 +10,7 @@ require('dotenv').config();
 require('./Models/db');
 const PORT = process.env.PORT || 4002 ;
 
+app.get("/favicon.icon", (req, res) => res.status(204));
 app.get("/favicon.png", (req, res) => res.status(204));
 app.get('/ping', (req, res) => {
     res.send('PONG_Hello World');
