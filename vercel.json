@@ -1,19 +1,5 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "index.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "index.js"
-      }
-    ],
-    "env": {
-      "PORT": "4002",
-      "MONGO_URI":"mongodb+srv://prince6777yogi:Y07AUZnd3mkgV5mQ@cluster-di.whnof.mongodb.net/ngo-website?retryWrites=true&w=majority"
-    }
+  "builds": [
+    { "src": "index.js", "use": "@vercel/node" }
+  ]
 }
