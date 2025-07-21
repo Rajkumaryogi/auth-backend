@@ -2,7 +2,7 @@ const ensureAuthProduct = require('../Middlewares/AuthProduct');
 const router = require('express').Router();
 
 router.get('/',ensureAuthProduct,(req, res) => {
-    console.log("---logged in user details : ",req.user);
+    // console.log("---logged in user details : ",req.user);
     res.status(200).json([
         {
             id: 1,
